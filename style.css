@@ -7,9 +7,9 @@
 
 .contenido__izquierda{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: baseline;
-    width: 10%;
+    max-width: 80px;
 }
 
 .contenido__header{
@@ -17,25 +17,35 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 10% 0% 10% 0%;
+    padding: 0rem 0rem 1.5rem 0rem;
 }
 
 .contenido__central{
-    padding: 10% 0% 10% 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 0% 0% 0px;
 }
 
 .contenido__input{
     color: #0A3871;
+    width: 600px;
+    height: 100px;
 }
 
 .contenido__advertencia{
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .contenido__button{
     padding: 5px 15px 5px 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
 }
 
 .contenido__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: #900606;
+    color: aliceblue;
 }
