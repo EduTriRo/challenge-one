@@ -12,7 +12,6 @@ console.table(matrizCodigo)
 function btnEncriptar(){
     const textoEncriptado = encriptar(contenido__input.value);
     contenido__derecha__textarea.value = textoEncriptado;
-    contenido__input.value = "";
     contenido__derecha__textarea.style.backgroundImage = "none";
 }
 function encriptar(stringEncriptado){
@@ -29,7 +28,6 @@ function encriptar(stringEncriptado){
 function btnDesencriptar(){
     const textoEncriptado = desencriptar(contenido__input.value)
     contenido__derecha__textarea.value = textoEncriptado
-    contenido__input.value = "";
     contenido__derecha__textarea.style.backgroundImage = "none";
 }
 function desencriptar(stringDesencriptado){
@@ -48,7 +46,6 @@ function btnCopiar(){
     let textarea = document.getElementById("textarea");
     textarea.select();
     document.execCommand("copy");
-    contenido__input.value = "";
 }
 
 function btnPegar(){
