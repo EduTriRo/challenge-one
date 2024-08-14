@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+<link rel="stylesheet" href="/style.css">
+
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
@@ -18,17 +21,19 @@
                 <textarea class="contenido__input" cols="60" rows="15" placeholder="       ESCRIBE AQUI TU MENSAJE"></textarea>
             </header>
             <p class="contenido__advertencia">
-                <img class="contenido__advertencia__img" src="/assets/exclamacion.png" alt="ADVERTENCIA"> Solo se admiten letras minúsculas sin acentos, nada de simbolos. Nota: Escribe los numeros con letras.
+                <img class="contenido__advertencia__img" src="/assets/exclamacion.png" alt="ADVERTENCIA"> Solo se admiten letras minúsculas sin acentos, nada de simbolos. Nota: Escribe los numeros con letras ya que el codigo generado utiliza los números.
             </p>
             <div class="contenido__central__botones">
-                <button class="contenido__buttone">Encriptar</button>
-                <button class="contenido__buttond">Desencriptar</button>
+                <button class="contenido__buttone" onclick="btnEncriptar()">Encriptar</button>
+                <button class="contenido__buttond" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </main>
     <div class="contenido__derecha">
-        <textarea class="contenido__derecha__textarea" cols="25" rows="15" placeholder="       ESCRIBE AQUI TU MENSAJE">Encuentra aqui los resultados.</textarea>
-        <button class="contenido__derecha__copiar">COPIAR</button>
+        <textarea id="textarea" class="contenido__derecha__textarea" cols="20" rows="10"></textarea>
+        <button class="contenido__derecha__copiar" onclick="btnCopiar()">COPIAR</button>
+        
     </div>
+<script src="/script.js"></script>
 </body>
 <footer class="contenido__footer">
             <p>Pide tu encriptador o ayuda para un proyecto similar.</p>

@@ -1,7 +1,9 @@
 *{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600px;
+    line-height: 160%;
 }
-
 .contenido{
     display: flex;
     flex-direction: row;
@@ -12,7 +14,7 @@
     flex-direction: column;
     justify-content: baseline;
     max-width: 150px;
-    padding: 5% 1% 5% 1%;
+    padding: 5%;
 }
 .contenido__logo{
     max-height: 150px;
@@ -51,7 +53,7 @@
     height: 50px;
     width: 150px;
     border: 1px solid #000000;
-    border-radius: 10px;
+    border-radius: 15px;
     color: #053b11;
     font-size: 1.2rem;
     font-weight: 600;
@@ -61,7 +63,7 @@
     height: 50px;
     width: 200px;
     border: 1px solid #000000;
-    border-radius: 10px;
+    border-radius: 15px;
     color: #900606;
     font-size: 1.2rem;
     font-weight: 600;
@@ -81,14 +83,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5% 1% 5% 1%;
+    padding: 5% 10% 5% 1%;
     background-color: white;
     border: none;
     outline: none;
     border-radius: 32px;
 }
 .contenido__derecha__textarea{
-    background-color: white;
+    background-image: url("assets/Muñeco.png");
+    background-repeat: no-repeat;
     color: #000000;
     font-size: 1.5rem;
     outline: none;
@@ -96,11 +99,13 @@
 }
 .contenido__derecha__copiar{
     height: 50px;
-    width: 250px;
+    width: 150px;
     cursor: pointer;
     border: 1px solid black;
-    border-radius: 24px;
+    border-radius: 15px;
     font-size: 1.2rem;
+    font-weight: 600;
+    
 }
 .contenido__derecha__copiar:hover{
     background-color: #0A3871;
