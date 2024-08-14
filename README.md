@@ -1,2 +1,2 @@
-Encriptador de texto en progreso.
+Encriptador de texto desarrollado para Alura Latam.
 ```Challenge de Alura One```
