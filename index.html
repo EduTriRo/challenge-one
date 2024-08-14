@@ -2,30 +2,36 @@
 <html lang="en">
 
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge Alura ONE</title>
+    <title>Encriptador</title>
 </head>
 <body class="contenido">
     <div class="contenido__izquierda">
         <img class="contenido__logo" src="/assets/logo rojo.png" alt="Logo codificador">
     </div>
-    <div class="contenido__central">
-        <header class="contenido__header">Escribe aquí tu mensaje:
-        </header>
-        <main>
-            <input type="text" name="text" class="contenido__input">
+        <main class="contenido__central">
+            <header>
+                <textarea class="contenido__input" cols="60" rows="15" placeholder="       ESCRIBE AQUI TU MENSAJE"></textarea>
+            </header>
             <p class="contenido__advertencia">
-                <img src="" alt="ADVERTENCIA"> Solo admite letras minúsculas sin acentos.</p>
-            <button class="contenido__button">Encriptar</button>
-            <button class="contenido__button">Desencriptar</button>
+                <img class="contenido__advertencia__img" src="/assets/exclamacion.png" alt="ADVERTENCIA"> Solo se admiten letras minúsculas sin acentos, nada de simbolos. Nota: Escribe los numeros con letras.
+            </p>
+            <div class="contenido__central__botones">
+                <button class="contenido__buttone">Encriptar</button>
+                <button class="contenido__buttond">Desencriptar</button>
+            </div>
         </main>
+    <div class="contenido__derecha">
+        <textarea class="contenido__derecha__textarea" cols="25" rows="15" placeholder="       ESCRIBE AQUI TU MENSAJE">Encuentra aqui los resultados.</textarea>
+        <button class="contenido__derecha__copiar">COPIAR</button>
     </div>
 </body>
 <footer class="contenido__footer">
-            <p>Pide tu encriptador o ayuda para algun proyecto similar</p>
-            <p>EduTriRo: 22 2215 1553</p>
+            <p>Pide tu encriptador o ayuda para un proyecto similar.</p>
+            <p>EduTriRo: cedd_9@hotmail.com</p>
 </footer>
 </html>

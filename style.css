@@ -1,57 +1,116 @@
-
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .contenido{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-
 .contenido__izquierda{
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    max-width: 200px;
-    max-height: 200px;
-    
-
+    max-width: 150px;
+    padding: 5% 1% 5% 1%;
 }
-
 .contenido__logo{
     max-height: 150px;
 }
-
-.contenido__header{
-    color: #0A3871;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 0rem 0rem 1.5rem 0rem;
-}
-
 .contenido__central{
     display: flex;
     flex-direction: column;
-    padding: 0% 0% 0% 0px;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 1% 5% 1%;
 }
-
 .contenido__input{
     color: #0A3871;
-    width: 600px;
-    height: 100px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1%;
+    text-transform: lowercase;
+    outline: none;
+    border: none;
 }
-
+::placeholder{color: #0A3871;}
+    .contenido__input:focus{
+        outline: none;
+    }
 .contenido__advertencia{
     font-size: 1rem;
 }
-
-.contenido__button{
-    padding: 5px 15px 5px 15px;
-    border: 1px solid #000000;
-    border-radius: 5px;
+.contenido__advertencia__img{
+    max-width: 1rem;
 }
+.contenido__central__botones{
 
+}
+.contenido__buttone{
+    padding: 5px 15px 5px 15px;
+    height: 50px;
+    width: 150px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    color: #053b11;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.contenido__buttond{
+    padding: 5px 15px 5px 15px;
+    height: 50px;
+    width: 200px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    color: #900606;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.contenido__buttone:hover{
+    color: #000000;
+    background-color: #0b7e24;
+    cursor: pointer;
+}
+.contenido__buttond:hover{
+    color: #000000;
+    background-color: #900606;
+    cursor: pointer;
+}
+.contenido__derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 1% 5% 1%;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 32px;
+}
+.contenido__derecha__textarea{
+    background-color: white;
+    color: #000000;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+}
+.contenido__derecha__copiar{
+    height: 50px;
+    width: 250px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 24px;
+    font-size: 1.2rem;
+}
+.contenido__derecha__copiar:hover{
+    background-color: #0A3871;
+    color: #ffffff;
+}
 .contenido__footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
     position: fixed;
     left: 0;
     bottom: 0;
