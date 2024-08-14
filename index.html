@@ -17,9 +17,7 @@
         <img class="contenido__logo" src="/assets/logo rojo.png" alt="Logo codificador">
     </div>
         <main class="contenido__central">
-            <header>
-                <textarea class="contenido__input" cols="60" rows="15" placeholder="       ESCRIBE AQUI TU MENSAJE"></textarea>
-            </header>
+            <textarea id="textopegar" class="contenido__input" cols="60" rows="15" placeholder="       ESCRIBE AQUI TU MENSAJE"></textarea>
             <p class="contenido__advertencia">
                 <img class="contenido__advertencia__img" src="/assets/exclamacion.png" alt="ADVERTENCIA"> Solo se admiten letras minúsculas sin acentos, nada de simbolos. Nota: Escribe los numeros con letras ya que el codigo generado utiliza los números.
             </p>
@@ -30,8 +28,10 @@
         </main>
     <div class="contenido__derecha">
         <textarea id="textarea" class="contenido__derecha__textarea" cols="20" rows="10"></textarea>
-        <button class="contenido__derecha__copiar" onclick="btnCopiar()">COPIAR</button>
-        
+        <div class="contenido__derecha__botones">
+            <button class="contenido__derecha__copiar" onclick="btnCopiar()">Copiar</button>
+            <button class="contenido__derecha__pegar" onclick="btnPegar()">Pegar</button>
+        </div>
     </div>
 <script src="/script.js"></script>
 </body>

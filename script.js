@@ -30,6 +30,7 @@ function btnDesencriptar(){
     const textoEncriptado = desencriptar(contenido__input.value)
     contenido__derecha__textarea.value = textoEncriptado
     contenido__input.value = "";
+    contenido__derecha__textarea.style.backgroundImage = "none";
 }
 function desencriptar(stringDesencriptado){
     let matrizCodigo = [["e", "3ntr"], ["i", "1ms"], ["a", "4c1"], ["o", "0b3r"], ["u", "7f4t"]];
@@ -46,5 +47,14 @@ function desencriptar(stringDesencriptado){
 function btnCopiar(){
     let textarea = document.getElementById("textarea");
     textarea.select();
-    document.execCommand("copy")
+    document.execCommand("copy");
+    contenido__input.value = "";
+}
+
+function btnPegar(){
+    let textopegar = document.getElementById("textopegar");
+    textopegar.select();
+    contenido__input.value = contenido__derecha__textarea.value;
+    contenido__derecha__textarea.value = "";
+    contenido__derecha__textarea.style.backgroundImage = "";
 }

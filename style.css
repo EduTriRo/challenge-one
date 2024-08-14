@@ -46,7 +46,8 @@
     max-width: 1rem;
 }
 .contenido__central__botones{
-
+    display: flex;
+    gap: 1rem;
 }
 .contenido__buttone{
     padding: 5px 15px 5px 15px;
@@ -54,7 +55,7 @@
     width: 150px;
     border: 1px solid #000000;
     border-radius: 15px;
-    color: #053b11;
+    color: #000000;
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -64,7 +65,7 @@
     width: 200px;
     border: 1px solid #000000;
     border-radius: 15px;
-    color: #900606;
+    color: #000000;
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -88,6 +89,7 @@
     border: none;
     outline: none;
     border-radius: 32px;
+    gap: 1rem;
 }
 .contenido__derecha__textarea{
     background-image: url("assets/Muñeco.png");
@@ -96,6 +98,13 @@
     font-size: 1.5rem;
     outline: none;
     border: none;
+}
+.contenido__derecha__botones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
 }
 .contenido__derecha__copiar{
     height: 50px;
@@ -110,6 +119,19 @@
 .contenido__derecha__copiar:hover{
     background-color: #0A3871;
     color: #ffffff;
+}
+.contenido__derecha__pegar{
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.contenido__derecha__pegar:hover{
+    background-color: #d1be12;
+    color: #000000;
 }
 .contenido__footer{
     display: flex;
