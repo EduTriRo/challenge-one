@@ -15,7 +15,7 @@ function btnEncriptar(){
     contenido__derecha__textarea.style.backgroundImage = "none";
 }
 function encriptar(stringEncriptado){
-    let matrizCodigo = [["e", "3ntr"], ["i", "1ms"], ["a", "4c1"], ["o", "0b3r"], ["u", "7f4t"]];
+    let matrizCodigo = [["e", "9ntr"], ["i", "8ms"], ["a", "3c1"], ["o", "0b2r"], ["u", "7f4t"]];
     stringEncriptado = stringEncriptado.toLowerCase();
 
     for(let i = 0; i < matrizCodigo.length; i++){
@@ -31,7 +31,7 @@ function btnDesencriptar(){
     contenido__derecha__textarea.style.backgroundImage = "none";
 }
 function desencriptar(stringDesencriptado){
-    let matrizCodigo = [["e", "3ntr"], ["i", "1ms"], ["a", "4c1"], ["o", "0b3r"], ["u", "7f4t"]];
+    let matrizCodigo = [["e", "9ntr"], ["i", "8ms"], ["a", "3c1"], ["o", "0b2r"], ["u", "7f4t"]];
     stringDesencriptado = stringDesencriptado.toLowerCase();
 
     for(let i = 0; i < matrizCodigo.length; i++){
@@ -54,4 +54,7 @@ function btnPegar(){
     contenido__input.value = contenido__derecha__textarea.value;
     contenido__derecha__textarea.value = "";
     contenido__derecha__textarea.style.backgroundImage = "";
+    //se intenta en proximo patch poder hacer el boton de pegar real, 
+    //que pegue del clipboard y no los valores directos desde la caja del resultado 
+    //(contenido__derecha__textarea) a la caja de entrada (contenido__input)
 }

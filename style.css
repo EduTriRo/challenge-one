@@ -13,8 +13,8 @@
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    max-width: 150px;
-    padding: 5%;
+    max-width: 100px;
+    padding: 2%;
 }
 .contenido__logo{
     max-height: 150px;
@@ -24,13 +24,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5% 1% 5% 1%;
+    padding: 4% 2% 4% 2%;
 }
 .contenido__input{
-    color: #0A3871;
-    font-size: 1.5rem;
+    color: #000000;
+    font-size: 1.15rem;
     font-weight: 600;
-    padding: 1%;
     text-transform: lowercase;
     outline: none;
     border: none;
@@ -41,6 +40,8 @@
     }
 .contenido__advertencia{
     font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .contenido__advertencia__img{
     max-width: 1rem;
@@ -146,4 +147,8 @@
     font-weight: 600;
     font-size: 1.2rem;
     color: #000000;
+}
+
+@media (max-width:850px){
+    
 }
